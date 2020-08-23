@@ -462,16 +462,24 @@ header {
     orientation: left;
 }
 
+.timeline ul li:nth-child(even) .time h4{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    orientation: right;
+}
+
 .timeline ul li:nth-child(odd) .time{
     position: absolute;
     top: 15px;
-    right: -165px;
+    right: -212px;
     margin: 0;
     padding: 8px 16px;
     background: var(--clr-accent);;
     color: #fff;
     border-radius: 10px;
-    box-shadow: var(--bs); 
+    box-shadow: var(--bs);
+    align-content: left;  
 }
 
 .timeline ul li:nth-child(even) .time{
@@ -484,7 +492,7 @@ header {
     color: #fff;
     border-radius: 10px;
     box-shadow: var(--bs);
-    align-content: center; 
+    align-content: right; 
 }
 
 @media (max-width : 1000px){
